@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 <html lang="en">
 <head>
     <title>Doctor Sign In</title>
@@ -6,12 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-    <nav>
-        <span>Doctor Secret Service</span>
-        <a href="/">Sign In</a>
-    </nav>
-</header>
+<header th:replace = "fragments/header.html :: top">Header TODO</header>
 <ul class="doctor-list">
     <li><a href="/doctor/?number=1&name=William%20Hartnell">Doctor 1</a></li>
     <li><a href="/doctor/?number=2&name=Patrick%20Troughton">Doctor 2</a></li>
@@ -28,7 +24,7 @@
     <li><a href="/doctor/?number=13&name=Jodie%20Whittaker">Doctor 13</a></li>
     <li><a href="/doctor/">Unknown Doctor</a></li>
 </ul>
-<footer>
+<footer th:replace = "fragments/footer.html :: low">Footer TODO</footer>
     <ul>
         <li><a href="#">Twitter</a></li>
         <li><a href="#">Facebook</a></li>
